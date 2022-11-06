@@ -1,0 +1,220 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background-color: darkturquoise ;
+    display: grid;
+    place-content: center;
+    
+}
+.subcontenedor{
+    background-color: darkturquoise;
+    width: 39rem;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: repeat(2,6.5rem) auto repeat(2,6.5rem);
+    grid-template-rows: repeat(2,10rem) auto repeat(2,10rem);
+}
+.contenido{
+    width: 26rem;
+    height: 40rem;
+    background-color: darkturquoise;
+    display: grid;
+    grid-template-columns: repeat(13,1fr) ;
+    grid-template-rows: repeat(20,1fr) ;
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+.amarillo-1{
+    background-color: yellow;
+    grid-area: 2 / 5 / span 1 / span 5;
+}
+.amarillo-2{
+    background-color: yellow;
+    grid-area: 3 / 4 / span 1 / span 7;
+}
+.amarillo-3{
+    background-color: yellow;
+    grid-area: 4 / 3 / span 12 / span 9;
+}
+.gafas-1a{
+    background-color: #808080;
+    grid-area: 4 / 4 / span 1 / span 2;
+}
+.gafas-1b{
+    background-color: #808080;
+    grid-area: 4 / 7 / span 1 / span 2;
+}
+.gafas-2a{
+    background-color: #808080;
+    grid-area: 5 / 3 / span 2 / span 7;
+}
+.gafas-2b{
+    background-color: #000000;
+    grid-area: 5 / 10 / span 2 / span 2;
+}
+.gafas-3a{
+    background-color: #808080;
+    grid-area: 7 / 4 / span 1 / span 2;
+}
+.gafas-3b{
+    background-color: #808080;
+    grid-area: 7 / 7 / span 1 / span 2;
+}
+.ojos-a{
+    background-color: #FFFFFF;
+    grid-area: 5 / 4 / span 2 / span 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.ojos-b{
+    background-color: #FFFFFF;
+    grid-area: 5 / 7 / span 2 / span 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.pupila-a{
+    background-color: #000000;
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+.pupila-b{
+    background-color: #000000;
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+
+.boca-a{
+    background-color: #000000;
+    grid-area: 10 / 5 / span 1 / span 3;
+}
+.boca-b{
+    background-color: #000000;
+    grid-area: 9 / 8 / span 1 / span 1;
+}
+
+.body-1a{
+    background-color: #0026FF;
+    grid-area: 11 / 3 / span 1 / span 1;
+
+}
+.body-1b{
+    background-color: #0026FF;
+    grid-area: 11 / 11 / span 1 / span 1;
+}
+.body-2a{
+    background-color: #0026FF;
+    grid-area: 12 / 4 / span 1 / span 1;
+}
+.body-2b{
+    background-color: #0026FF;
+    grid-area: 12 / 10 / span 1 / span 1;
+}
+.body-3{
+    background-color: #0026FF;
+    grid-area: 12 / 5 / span 6 / span 5;
+}
+.body-4a{
+    background-color: #0026FF;
+    grid-area: 15 / 4 / span 3 / span 1;
+}
+.body-4b{
+    background-color: #0026FF;
+    grid-area: 15 / 10 / span 3 / span 1;
+}
+.manos-1a{
+    background-color: #000000;
+    grid-area: 16 / 2 / span 1 / span 1;
+}
+.manos-1b{
+    background-color: #000000;
+    grid-area: 16 / 12 / span 1 / span 1;
+}
+.manos-2a{
+    background-color: #000000;
+    grid-area: 16 / 3 / span 2 / span 1;
+}
+.manos-2b{
+    background-color: #000000;
+    grid-area: 16 / 11 / span 2 / span 1;
+}
+.zapatos-1a{
+    background-color: #000000;
+    grid-area: 19 / 4 / span 1 / span 1;
+}
+.zapatos-1b{
+    background-color: #000000;
+    grid-area: 19 / 10 / span 1 / span 1;
+}
+.zapatos-2a{
+    background-color: #000000;
+    grid-area: 18 / 5 / span 2 / span 2;
+}
+.zapatos-2b{
+    background-color: #000000;
+    grid-area: 18 / 8 / span 2 / span 2;
+}
+
+.lamparas{
+    background-color: #000000;
+    width: 50%;
+    height: 40%;
+    
+}
+.lampara-1{
+    grid-area: 1 / 1 / span 1 /span 1;
+    justify-self: end;
+}
+.lampara-2{
+    grid-area: 1 / 5 / span 1 /span 1;
+}
+.lampara-3{
+    grid-area: 5 / 1 / span 1 /span 1;
+    justify-self: end;
+}
+.lampara-4{
+    grid-area: 5 / 5 / span 1 /span 1;
+}
+
+.subcontenedor .lamparas button{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.ojo-loco{
+    grid-area: 5 / 3 / span 1 / span 1;
+    width: 80%;
+    height: 40%;
+    place-self: center;
+    position: relative;
+}
+.ojo-loco button{
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    position: absolute;
+    background-color: #ECF126;
+    border: solid #ECF126;
+    font-weight: 700;
+    border-radius: 1rem;
+
+}
+.ojo-loco span{
+    background-color: #FF7141;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+}
